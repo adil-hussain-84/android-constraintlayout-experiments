@@ -8,12 +8,18 @@
 
     <View
         android:id="@+id/view1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:background="@android:color/black" />
 
     <View
         android:id="@+id/view2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@android:color/black" />
+
+    <View
+        android:id="@+id/view3"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:background="@android:color/black" />
@@ -22,7 +28,7 @@
         android:id="@+id/flow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="view1,view2"
+        app:constraint_referenced_ids="view1,view2,view3"
         app:flow_horizontalAlign="start"
         app:flow_horizontalStyle="packed"
         app:flow_maxElementsWrap="1"
