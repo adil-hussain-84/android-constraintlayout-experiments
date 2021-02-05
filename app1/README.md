@@ -2,7 +2,7 @@
 
 This Android application module demonstrates how to vertically stack and horizontally align referenced widgets in a [Flow](https://developer.android.com/reference/androidx/constraintlayout/helper/widget/Flow) virtual layout.
 
-The application consists of a single activity named [MainActivity](src/main/java/com/tazkiyatech/constraintlayout/experiments/MainActivity.kt) which which has no functionality other than setting the [activity_main.xml](src/main/res/layout/activity_main.xml) layout file as its content view.
+The application consists of a single activity named [MainActivity](src/main/java/com/tazkiyatech/constraintlayout/app1/MainActivity.kt) which which has no functionality other than setting the [activity_main.xml](src/main/res/layout/activity_main.xml) layout file as its content view.
 
 The [activity_main.xml](src/main/res/layout/activity_main.xml) layout file defines a [Flow](https://developer.android.com/reference/androidx/constraintlayout/helper/widget/Flow) virtual layout with the following properties:
 
