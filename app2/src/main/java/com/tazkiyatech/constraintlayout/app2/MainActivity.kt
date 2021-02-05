@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,12 +20,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showButtonTwo(view: View) {
+        button1.layoutParams.width = ConstraintLayout.LayoutParams.WRAP_CONTENT
         button2.visibility = View.VISIBLE
-        // TODO
     }
 
     fun hideButtonTwo(view: View) {
+        button1.layoutParams.width = ConstraintLayout.LayoutParams.MATCH_CONSTRAINT
         button2.visibility = View.GONE
-        // TODO
     }
 }

@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="The following two buttons are defined within a ConstraintLayout and will be used to demonstrate how a view's constraints can be changed at runtime. Note that there are no &quot;on click&quot; actions defined on these two buttons." />
+        android:text="The following two buttons are defined within a ConstraintLayout and will be used to demonstrate how a view (&quot;Button One&quot;) can be changed at runtime to wrap its contents tightly when a second view (&quot;Button Two&quot;) is visible and otherwise to fill the available width when the second view is gone. Note that there are no &quot;on click&quot; actions defined on these two buttons." />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -28,6 +28,7 @@
             android:singleLine="true"
             android:text="Button One"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintEnd_toStartOf="@id/button2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -51,17 +52,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Tap on either of the buttons below to simultaneously change the visibility of &quot;Button Two&quot; and the constraints on &quot;Button One&quot; at runtime." />
+        android:text="Tap on either of the buttons below to simultaneously change the visibility of &quot;Button Two&quot; and the width behaviour of &quot;Button One&quot;." />
 
     <Button
-        android:id="@+id/showButton2Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="showButtonTwo"
         android:text="Show Button Two" />
 
     <Button
-        android:id="@+id/hideButton2Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="hideButtonTwo"
