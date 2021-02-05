@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="The following two buttons are defined within a ConstraintLayout." />
+        android:text="The following two buttons are defined within a ConstraintLayout and will be used to demonstrate how a view's constraints can be changed at runtime. Note that there are no &quot;on click&quot; actions defined on these two buttons." />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,6 +22,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button1"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:singleLine="true"
@@ -33,6 +34,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button2"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="6dp"
@@ -49,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Tap on the buttons below to change the constraints of the two buttons above at runtime." />
+        android:text="Tap on either of the buttons below to simultaneously change the visibility of &quot;Button Two&quot; and the constraints on &quot;Button One&quot; at runtime." />
 
     <Button
         android:id="@+id/showButton2Button"
