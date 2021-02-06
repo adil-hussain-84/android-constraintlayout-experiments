@@ -14,7 +14,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="The following two buttons are defined within a ConstraintLayout and will be used to demonstrate how a view (&quot;Button One&quot;) can be changed at runtime to wrap its contents tightly when a second view (&quot;Button Two&quot;) is visible and otherwise to fill the available width when the second view is gone. Note that there are no &quot;on click&quot; actions defined on these two buttons." />
+        android:text="The following two buttons are defined within a ConstraintLayout and are constrained relative to each other. These two buttons will be used to demonstrate the effect of toggling the width and visibility of views within a ConstraintLayout. Note that there are no &quot;on click&quot; actions defined on these two buttons." />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -51,14 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Tap on the buttons below to toggle the visibility of &quot;Button Two&quot; or the width attribute of &quot;Button One&quot;." />
-
-    <Button
-        android:id="@+id/toggleVisibilityButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="toggleVisibility"
-        tools:text="Show Button Two" />
+        android:text="The following two buttons are defined outside of the ConstraintLayout. These two buttons define &quot;on click&quot; actions which toggle the width of &quot;Button One&quot; and the visibility of &quot;Button Two&quot;." />
 
     <Button
         android:id="@+id/toggleWidthButton"
@@ -66,5 +59,12 @@
         android:layout_height="wrap_content"
         android:onClick="toggleWidth"
         android:text="Change Button One to Wrap Content" />
+
+    <Button
+        android:id="@+id/toggleVisibilityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="toggleVisibility"
+        tools:text="Show Button Two" />
 
 </LinearLayout>

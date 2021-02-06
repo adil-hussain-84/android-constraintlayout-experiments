@@ -46,25 +46,25 @@ class MainActivity : AppCompatActivity() {
 
     private fun showButtonTwo() {
         button2.visibility = View.VISIBLE
-        toggleVisibilityButton.text = "Hide Button Two"
+        toggleVisibilityButton.text = "Hide \"Button Two\""
     }
 
     private fun hideButtonTwo() {
         button2.visibility = View.GONE
-        toggleVisibilityButton.text = "Show Button Two"
+        toggleVisibilityButton.text = "Show \"Button Two\""
     }
 
     private fun changeButtonOneWidthToWrapContent() {
         button1.layoutParams.width = ConstraintLayout.LayoutParams.WRAP_CONTENT
         button1.requestLayout()
 
-        toggleWidthButton.text = "Change Button One Width To Match Constraint"
+        toggleWidthButton.text = "Change \"Button One\" Width\nTo Match Constraint"
     }
 
     private fun changeButtonOneWidthToMatchConstraint() {
         button1.layoutParams.width = ConstraintLayout.LayoutParams.MATCH_CONSTRAINT
         button1.requestLayout()
 
-        toggleWidthButton.text = "Change Button One Width To Wrap Content"
+        toggleWidthButton.text = "Change \"Button One\" Width\nTo Wrap Content"
     }
 }
