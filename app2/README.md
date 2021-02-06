@@ -1,3 +1,2 @@
-# Minimum width example
+# Example of anchoring a view's side to two different views
 
-TODO: Insert description here.
