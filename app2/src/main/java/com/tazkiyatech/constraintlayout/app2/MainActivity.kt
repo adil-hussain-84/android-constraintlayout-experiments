@@ -14,18 +14,57 @@ class MainActivity : AppCompatActivity() {
     private val button2: Button
         get() = findViewById(R.id.button2)
 
+    private val toggleVisibilityButton: Button
+        get() = findViewById(R.id.toggleVisibilityButton)
+
+    private val toggleWidthButton: Button
+        get() = findViewById(R.id.toggleWidthButton)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        showButtonTwo()
+        changeButtonOneWidthToWrapContent()
     }
 
-    fun showButtonTwo(view: View) {
-        button1.layoutParams.width = ConstraintLayout.LayoutParams.WRAP_CONTENT
+    fun toggleVisibility(view: View) {
+        if (button2.visibility == View.VISIBLE) {
+            hideButtonTwo()
+        } else {
+            showButtonTwo()
+        }
+    }
+
+    fun toggleWidth(view: View) {
+        if (button1.layoutParams.width == ConstraintLayout.LayoutParams.WRAP_CONTENT) {
+            changeButtonOneWidthToMatchConstraint()
+        } else {
+            changeButtonOneWidthToWrapContent()
+        }
+    }
+
+    private fun showButtonTwo() {
         button2.visibility = View.VISIBLE
+        toggleVisibilityButton.text = "Hide Button Two"
     }
 
-    fun hideButtonTwo(view: View) {
-        button1.layoutParams.width = ConstraintLayout.LayoutParams.MATCH_CONSTRAINT
+    private fun hideButtonTwo() {
         button2.visibility = View.GONE
+        toggleVisibilityButton.text = "Show Button Two"
+    }
+
+    private fun changeButtonOneWidthToWrapContent() {
+        button1.layoutParams.width = ConstraintLayout.LayoutParams.WRAP_CONTENT
+        button1.requestLayout()
+
+        toggleWidthButton.text = "Change Button One Width To Match Constraint"
+    }
+
+    private fun changeButtonOneWidthToMatchConstraint() {
+        button1.layoutParams.width = ConstraintLayout.LayoutParams.MATCH_CONSTRAINT
+        button1.requestLayout()
+
+        toggleWidthButton.text = "Change Button One Width To Wrap Content"
     }
 }
