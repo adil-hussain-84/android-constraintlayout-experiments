@@ -1,4 +1,4 @@
-# Toggle view width example
+# Toggle view width and view visibility example
 
 This Android module demonstrates the effect of toggling the width and visibility of views within a ConstraintLayout.
 
