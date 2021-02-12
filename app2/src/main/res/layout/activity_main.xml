@@ -14,6 +14,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
         android:text="The following two buttons are defined within a ConstraintLayout and are constrained relative to each other. These two buttons will be used to demonstrate the effect of toggling the width and visibility of views within a ConstraintLayout. Note that there are no &quot;on click&quot; actions defined on these two buttons." />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -51,6 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:justificationMode="inter_word"
         android:text="The following two buttons are defined outside of the ConstraintLayout. These two buttons define &quot;on click&quot; actions which toggle the width of &quot;Button One&quot; and the visibility of &quot;Button Two&quot;." />
 
     <Button
