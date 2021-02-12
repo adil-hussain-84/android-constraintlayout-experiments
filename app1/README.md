@@ -10,6 +10,6 @@ The [activity_main.xml](src/main/res/layout/activity_main.xml) layout file defin
 2. It vertically stacks its referenced widgets by virtue of having a `orientation` value of `vertical`.
 3. It horizontally aligns its referenced widgets by means of the `flow_horizontalAlign` property.
 
-This layout file also offers buttons outside of the ConstraintLayout for changing the horizontal alignment of the views referenced by the [Flow](https://developer.android.com/reference/androidx/constraintlayout/helper/widget/Flow) virtual layout, as follows:
+The [activity_main.xml](src/main/res/layout/activity_main.xml) layout file also offers buttons outside of the ConstraintLayout which offer the ability to change the horizontal alignment of the views in the [Flow](https://developer.android.com/reference/androidx/constraintlayout/helper/widget/Flow) virtual layout, as follows:
 
 ![Demo of application](demo.gif)
