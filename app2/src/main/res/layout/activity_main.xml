@@ -58,13 +58,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="toggleWidth"
-        android:text="Change Button One to Wrap Content" />
+        android:text="Toggle &quot;Button One&quot; width" />
 
     <Button
         android:id="@+id/toggleVisibilityButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="toggleVisibility"
-        tools:text="Show Button Two" />
+        android:text="Toogle &quot;Button Two&quot; visibility" />
 
 </LinearLayout>
