@@ -10,11 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App">
 
-        <activity android:name="com.tazkiyatech.constraintlayout.app2.MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
     </application>
